@@ -25,7 +25,8 @@ app.get('/contacts', (req, res) => {
             contacts.push({
                 id: record.id,
                 name: record.get('Name'),
-                email: record.get('Email')
+                email: record.get('Email'),
+                attachments: record.get('Attachments')
             });
         });
         // Hämta nästa sida med poster

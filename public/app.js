@@ -27,6 +27,7 @@ fetch(url)
         // Lägg till ul-elementet i div-elementet
         contactsDiv.appendChild(ul);
     })
+    
     .catch(error => {
         // Logga eventuella fel till konsolen
         console.error('There has been a problem with your fetch operation:', error);
